@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar ">
+        <div class="navbar-wrapper">
+            <div class="movix-wrapper">
+                <h1 class="movix">moviX</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item "><a href="index.html">Ana Sayfa</a></li>
+                    <li class="menu-list-item active"><a href="filmler.html">Filmler</a></li>
+                    <li class="menu-list-item"><a href="diziler.html">Diziler</a></li>
+                    <li class="menu-list-item"><a href="yeni-ve-popüler.html">Yeni ve Popüler</a></li>
+
+                </ul>
+            </div>
+            <<div class="profile-container">
+    <!-- Arama ikonu -->
+    <i class="bi bi-search search-icon" style="cursor: pointer;"></i>
+    <!-- Arama formu, varsayılan olarak gizli -->
+    <form id="searchForm" class="search-container" style="display: none;">
+        <input type="text" class="search-input" placeholder="Film veya dizi ara...">
+        <button type="submit" class="search-button"><i class="bi bi-search"></i></button>
+    </form>
+    <img class="profile-picture" src="img/profil.jpg" alt="Profil resmi">
+    <div class="profile-text-container">
+        <span class="profile-text"></span>
+        <i class="bi bi-caret-down-fill"></i>
+    </div>
+</div>
+
+<!-- Arama sonuçları için alan -->
+<div class="movie-list-container" id="searchResults" style="display: none;">
+    <h1 id="searchTitle" class="movie-list-title">Arama Sonuçları</h1>
+    <div class="movie-list-wrapper">
+        <ul id="movieList" class="movie-list"></ul>
+    </div>
+</div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="featured-content" style="background-image: url('img/bird-box.jpg');">
+                <p class="featured-desc"> Çocuklarını bir felaketten uzaklaştırmaya çalışan bir anne, imkansızı başarmak için son bir umutla tehlikeli bir nehirde nefes kesen bir yolculuğa çıkıyor
+                    .</p>
+                <div class="featured-buttons">
+                    <a href="https://www.hdfilmcehennemi.nl/hd-bird-box-hd-film-izle-7/">
+                    <button class="play-button"><i class="bi bi-play-circle"></i>oynat</button></a>
+                    <button class="info-button"><i class="bi bi-info-circle"></i>daha fazla bilgi</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">Popüler Filmler</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <li class="movie-item"><img class="movie-item-img" src="img/harrypottervesırlarodası.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Harry Potter ve Sırlar Odası</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.ltd/film/harry-potter-2-2002-izle-3/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/hobbıt.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Hobbit Beklenmedik Yolculuk</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.fullhdfilmizlesene.nl/film/hobbit-1-beklenmedik-yolculuk-fh3/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/alacakarnlık.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Alacakaranlık</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.ltd/film/alacakaranlik-2008-izle-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/Titanik_filmi.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Titanic</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.filmmodu.nl/titanic-1997-hd-turkce-dublaj-film-izle">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/hizli-ve-ofkeli.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Hızlı ve Öfkeli</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.fullhdfilmizlesene.nl/film/hizli-ve-ofkeli-1-fh3/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/yüzüklerin efendisi.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Yüzüklerin Efendisi</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.ltd/film/yuzuklerin-efendisi-1-2001-izle-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/spiderman.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">SPİDER-MAN</span>
+                        <div class="movie-item-buttons">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+
+            </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+        </div>
+        <h1 class="movie-list-title">Gerilim filmleri</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <li class="movie-item"><img class="movie-item-img" src="img/bird-box.jpg"">
+        <div class=" movie-item-info">
+                    <span class="movie-item-title">Bird Box</span>
+                    <div class="movie-item-buttons">
+                        <a href="https://www.hdfilmcehennemi.nl/hd-bird-box-hd-film-izle-7/">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+        </div>
+        </li>
+        <li class="movie-item"><img class="movie-item-img" src="img/kayıp kız.jfif" alt="">
+            <div class="movie-item-info">
+                <span class="movie-item-title">Kayıp Kız</span>
+                <div class="movie-item-buttons">
+                    <a href="https://www.hdfilmcehennemi.nl/kayip-kiz-izle-hdf-5/">
+                    <i class="bi bi-play-circle-fill"></i></a>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+            </div>
+        </li>
+        <li class="movie-item"><img class="movie-item-img" src="img/the-platform.jpg" alt="">
+            <div class="movie-item-info">
+                <span class="movie-item-title">The Plartform</span>
+                <div class="movie-item-buttons">
+                    <a href="https://www.hdfilmcehennemi.nl/the-platform-izle-hdf-7/">
+                    <i class="bi bi-play-circle-fill"></i></a>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+            </div>
+        </li>
+        <li class="movie-item"><img class="movie-item-img" src="img/The_Prestige.webp" alt="">
+            <div class="movie-item-info">
+                <span class="movie-item-title">The Prestige</span>
+                <div class="movie-item-buttons">
+                    <a href="https://www.hdfilmcehennemi.nl/hd-prestij-izle-7/">
+                    <i class="bi bi-play-circle-fill"></i></a>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+            </div>
+        </li>
+        <li class="movie-item"><img class="movie-item-img" src="img/rebecca.jpg" alt="">
+            <div class="movie-item-info">
+                <span class="movie-item-title">rebecca</span>
+                <div class="movie-item-buttons">
+                    <a href="https://www.filmmodu.nl/rebecca-turkce-dublaj-film-izle">
+                    <i class="bi bi-play-circle-fill"></i></a>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+            </div>
+        </li>
+        <li class="movie-item"><img class="movie-item-img" src="img/Parisin-Altinda.jpg" alt="">
+            <div class="movie-item-info">
+                <span class="movie-item-title">Parisin Altında</span>
+                <div class="movie-item-buttons">
+                    <a href="https://www.hdfilmcehennemi.nl/under-paris-1/">
+                    <i class="bi bi-play-circle-fill"></i></a>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+            </div>
+        </li>
+
+
+        </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+    </div>
+    <h1 class="movie-list-title">Romantik Filmler</h1>
+    <div class="movie-list-wrapper">
+        <ul class="movie-list">
+            <li class="movie-item"><img class="movie-item-img" src="img/ıssız-adam.jpg" alt="">
+                <div class="movie-item-info">
+                    <span class="movie-item-title">Issız Adam</span>
+                    <div class="movie-item-buttons">
+                        <a href="https://www.hdfilmcehennemi.ltd/film/issiz-adam-izle/">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="movie-item"><img class="movie-item-img" src="img/sonsuz-ask-1-1.jpg" alt="">
+                <div class="movie-item-info">
+                    <span class="movie-item-title">Sonsuz Aşk</span>
+                    <div class="movie-item-buttons">
+                        <a href="https://jetfilmizle.ltd/sonsuz-ask-izle-yerli-full.html">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="movie-item"><img class="movie-item-img" src="img/not defteri.jpg" alt="">
+                <div class="movie-item-info">
+                    <span class="movie-item-title">Not Defteri</span>
+                    <div class="movie-item-buttons">
+                         <a href="https://www.hdfilmcehennemi.nl/not-defteri-the-notebook-izle-hdf-hdf-6/">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="movie-item"><img class="movie-item-img" src="img/aşk ve gurur.webp" alt="">
+                <div class="movie-item-info">
+                    <span class="movie-item-title">Aşk ve Gurur</span>
+                    <div class="movie-item-buttons">
+                        <a href="https://www.hdfilmcehennemi.nl/ask-ve-gurur-izle-hdf-hdf-7/">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="movie-item"><img class="movie-item-img" src="img/incir reçeli.webp" alt="">
+                <div class="movie-item-info">
+                    <span class="movie-item-title">İncir Reçeli</span>
+                    <div class="movie-item-buttons">
+                        <a href="https://www.hdfilmcehennemi.nl/fig-jam/">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="movie-item"><img class="movie-item-img" src="img/oxford aşkım.jpg" alt="">
+                <div class="movie-item-info">
+                    <span class="movie-item-title">Oxford Aşkım</span>
+                    <div class="movie-item-buttons">
+                        <a href="https://www.hdfilmcehennemi.ltd/film/oxford-askim-izle/">
+                        <i class="bi bi-play-circle-fill"></i></a>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                </div>
+            </li>
+        </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+        <h1 class="movie-list-title">Yerli Komedi Filmleri</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <li class="movie-item"><img class="movie-item-img" src="img/celal ile ceren.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Celal ile Ceren</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmizle.to/celal-ile-ceren-izle/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/deliha.webp">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Deliha</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://filmmakinesi.de/film/deliha-izle-2014/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/düğün dernek.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Düğün Dernek</span>
+                        <div class="movie-item-buttons">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/eyvah eyvah.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Eyvah Eyvah</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmizle.to/eyyvah-eyvah-izle/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/organize işler.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Organize İşler</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.ltd/film/organize-isler-2005-izle-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/sumelanin-sifresi-temel.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Sümelanin Şifresi:Temel</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/sumela-nin-sifresi-temel/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+        </div>
+    </div>
+    
+    <script src="script.js">
+        document.getElementById('searchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const term = document.querySelector('.search-input').value;
+            if (term) {
+                const response = await fetch(`http://localhost:3000/search?term=${encodeURIComponent(term)}`);
+                const data = await response.json();
+                const movieList = document.getElementById('movieList');
+                const searchTitle = document.getElementById('searchTitle');
+                
+                movieList.innerHTML = '';
+                if (data.length > 0) {
+                    searchTitle.textContent = `Arama Sonuçları: '${term}'`;
+                    data.forEach(item => {
+                        const li = document.createElement('li');
+                        li.className = 'movie-item';
+                        li.innerHTML = `
+                            <img class="movie-item-img" src="${item.ImageUrl}" alt="${item.Title}">
+                            <div class="movie-item-info">
+                                <span class="movie-item-title">${item.Title}</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                        `;
+                        movieList.appendChild(li);
+                    });
+                } else {
+                    searchTitle.textContent = 'Arama Sonucu: Hiçbir şey bulunamadı.';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

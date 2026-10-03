@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar ">
+        <div class="navbar-wrapper">
+            <div class="movix-wrapper">
+                <h1 class="movix">moviX</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item "><a href="index.html">Ana Sayfa</a></li>
+                    <li class="menu-list-item "><a href="filmler.html">Filmler</a></li>
+                    <li class="menu-list-item active"><a href="diziler.html">Diziler</a></li>
+                    <li class="menu-list-item"><a href="yeni-ve-popüler.html">Yeni ve Popüler</a></li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+    <!-- Arama ikonu -->
+    <i class="bi bi-search search-icon" style="cursor: pointer;"></i>
+    <!-- Arama formu, varsayılan olarak gizli -->
+    <form id="searchForm" class="search-container" style="display: none;">
+        <input type="text" class="search-input" placeholder="Film veya dizi ara...">
+        <button type="submit" class="search-button"><i class="bi bi-search"></i></button>
+    </form>
+    <img class="profile-picture" src="img/profil.jpg" alt="Profil resmi">
+    <div class="profile-text-container">
+        <span class="profile-text"></span>
+        <i class="bi bi-caret-down-fill"></i>
+    </div>
+</div>
+
+<!-- Arama sonuçları için alan -->
+<div class="movie-list-container" id="searchResults" style="display: none;">
+    <h1 id="searchTitle" class="movie-list-title">Arama Sonuçları</h1>
+    <div class="movie-list-wrapper">
+        <ul id="movieList" class="movie-list"></ul>
+    </div>
+</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="featured-content" style="background-image: url('img/dark.png');">
+                <p class="featured-desc">Bir çocuğun kaybolması, dört aileyi hummalı bir cevap arayışına iter. Bu
+                    arayışları, üç nesli kapsayan akıl almaz bir gizemi ortaya çıkarmalarına neden olur.</p>
+                <div class="featured-buttons">
+                    <a href="https://www.hdfilmcehennemi.nl/dizi/dark-izle-2/sezon-1/bolum-1-hd1/">
+                    <button class="play-button"><i class="bi bi-play-circle"></i>oynat</button></a>
+                    <button class="info-button"><i class="bi bi-info-circle"></i>daha fazla bilgi</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">Ödüllü Diziler</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <li class="movie-item"><img class="movie-item-img" src="img/anne with an e.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Anne With An 'E'</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/dizi/anne-with-an-e-izle-3/sezon-1/bolum-1-hd1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/dark.png" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">DARK</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/dizi/dark-izle-2/sezon-1/bolum-1-hd1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/la casa de papel.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">La Casa De Papel</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.ltd/dizi/la-casa-de-papel-izle-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/the crown.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">The Crown</span>
+                        <div class="movie-item-buttons">
+                            <a href="http://hdfilmcehennemi.nl/dizi/the-crown-izle-4/sezon-1/bolum-1-hd1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/the queen's gambit.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">The Queen's Gambit</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://dizilla.club/the-queens-gambit-1-sezon-1-bolum">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/outlander.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Autlander</span>
+                        <div class="movie-item-buttons">
+                            <a href="http://dizilla.club/outlander-blood-of-my-blood-1-sezon-1-bolum">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+        </div>
+        <h1 class="movie-list-title">Suç Drama Dizileri</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <li class="movie-item"><img class="movie-item-img" src="img/alias-grace.jpg">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Alias Grace</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/dizi/alias-grace-izle-2/sezon-1/bolum-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/biz-kimden-kaciyorduk-anne.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Biz Kimden Kaçıyorduk Anne </span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.ddizi.im/izle/80855/biz-kimden-kaciyorduk-anne-1-bolum-hd12.htm">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/Breaking-Bad.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Breaking Bad</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/dizi/breaking-bad-izle-6/sezon-1/bolum-1-hd2/">
+                            <i class="bi bi-play-circle-fill"></i></a>s
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/lupin.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Lupin</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.ltd/bolum/lupin-1-sezon-1-bolum-izle-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/mezarlık.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Mezarlık</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://yabancidizi.so/dizi/mezarlik-izle-3/sezon-1/bolum-1">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/kulup.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Kulüp</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.ddizi.im/izle/76099/kulup-1-sezon-1-bolum-hd1.htm">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+        </div>
+        <h1 class="movie-list-title">Duygusal Diziler</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <li class="movie-item"><img class="movie-item-img" src="img/bir-baskadir.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Bir Başkadır</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.dizibox.so/bir-baskadir-1-sezon-1-bolum-izle/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/ölmek için 13 sebep.webp" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Ölmek İçin 13 Sebep</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://yabancidizi.so/dizi/13-reasons-why-izle-4/sezon-1/bolum-1">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/virgin-river.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Virgin River</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/dizi/virgin-river-izle-3/sezon-1/bolum-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/Unorthodox.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Unorthodox</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://dizilla.club/unorthodox-1-sezon-1-bolum">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-item"><img class="movie-item-img" src="img/fatma.jpg" alt="">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Fatma</span>
+                        <div class="movie-item-buttons">
+                            <a href="https://www.hdfilmcehennemi.nl/dizi/fatma-izle-2/sezon-1/bolum-1/">
+                            <i class="bi bi-play-circle-fill"></i></a>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </div>
+                </li>
+
+            </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+            <h1 class="movie-list-title">Yerli Diziler</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item"><img class="movie-item-img" src="img/atiye.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Atiye</span>
+                            <div class="movie-item-buttons">
+                                <a href="https://www.ddizi.im/izle/70289/atiye-1-sezon-1-bolum-izle-hd1.htm">
+                                <i class="bi bi-play-circle-fill"></i></a>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item"><img class="movie-item-img" src="img/şahmaran.webp">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Şahmaran</span>
+                            <div class="movie-item-buttons">
+                                <a href="https://www.hdfilmcehennemi.nl/dizi/shahmaran-8/sezon-1/bolum-1/">
+                                <i class="bi bi-play-circle-fill"></i></a>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item"><img class="movie-item-img" src="img/zeytin ağacı.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Zeytin Ağacı</span>
+                            <div class="movie-item-buttons">
+                                <a href="https://www.hdfilmcehennemi.ltd/bolum/zeytin-agaci-1-sezon-1-bolum-izle-1/">
+                                <i class="bi bi-play-circle-fill"></i></a>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item"><img class="movie-item-img" src="img/kübra.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Kübra</span>
+                            <div class="movie-item-buttons">
+                                <a href="https://www.hdfilmizle.to/dizi/kubra/sezon-1/bolum-1/">
+                                <i class="bi bi-play-circle-fill"></i></a>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="movie-item"><img class="movie-item-img" src="img/hakan muhafız.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Hakan Muhafız</span>
+                            <div class="movie-item-buttons">
+                                <a href="https://www.hdfilmcehennemi.ltd/bolum/hakan-muhafiz-1-sezon-1-bolum-izle/">
+                                <i class="bi bi-play-circle-fill"></i></a>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul><i class="bi bi-chevron-right arrow right-arrow"></i>
+            </div>
+        </div>
+        
+        <script src="script.js">
+        document.getElementById('searchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const term = document.querySelector('.search-input').value;
+            if (term) {
+                const response = await fetch(`http://localhost:3000/search?term=${encodeURIComponent(term)}`);
+                const data = await response.json();
+                const movieList = document.getElementById('movieList');
+                const searchTitle = document.getElementById('searchTitle');
+                
+                movieList.innerHTML = '';
+                if (data.length > 0) {
+                    searchTitle.textContent = `Arama Sonuçları: '${term}'`;
+                    data.forEach(item => {
+                        const li = document.createElement('li');
+                        li.className = 'movie-item';
+                        li.innerHTML = `
+                            <img class="movie-item-img" src="${item.ImageUrl}" alt="${item.Title}">
+                            <div class="movie-item-info">
+                                <span class="movie-item-title">${item.Title}</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                        `;
+                        movieList.appendChild(li);
+                    });
+                } else {
+                    searchTitle.textContent = 'Arama Sonucu: Hiçbir şey bulunamadı.';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
